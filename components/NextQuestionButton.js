@@ -5,7 +5,7 @@ const NextQuestionButton = () => {
 
     return (
         <button className="absolute md:bottom-16 bottom-0 left-0 right-0 mx-auto" onClick={() => swiper.slideNext()}>
-            <div className="absolute bottom-8 left-0 right-0 flex items-center justify-center">
+            <div className="absolute bottom-12 left-0 right-0 flex items-center justify-center">
                 <div className="animate-bounce flex items-center justify-center space-x-3 bg-[#087685] rounded-full font-bold px-5 py-2 font-xl text-white">
                     <div>
                         Next
