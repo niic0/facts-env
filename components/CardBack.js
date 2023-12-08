@@ -4,7 +4,7 @@ const CardBack = ({ fact, indexQuestion, setIndexQuestion, setResponseClicked })
     const swiper = useSwiper();
 
     return (
-        <div className="relative z-10 mx-4 rounded-2xl bg-white drop-shadow-lg px-4 py-7 my-auto w-[17rem] md:h-[600px] h-[400px]">
+        <div className="relative z-10 mx-4 rounded-2xl bg-white drop-shadow-lg px-4 py-7 my-auto md:w-96 w-[16rem] md:h-[600px] h-[500px]">
             {
                 fact.true ?
                     <div className="w-full mt-6 mb-10">
