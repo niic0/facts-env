@@ -4,7 +4,7 @@ const CardFront = ({fact }) => {
     const swiper = useSwiper();
 
     return (
-        <div className="relative mx-4 rounded-2xl bg-white drop-shadow-lg px-4 py-7 my-auto w-96 h-[600px]">
+        <div className="relative mx-4 rounded-2xl bg-white drop-shadow-lg px-4 py-7 my-auto md:w-96 w-36 h-[600px]">
             <div className="font-bold text-2xl mb-8 text-neutral-700">
                 {fact.fact}
             </div>

@@ -71,7 +71,7 @@ const fetchDataFromFirestore = async () => {
 };
 
 export default function Home() {
-  const[facts, setFacts] = useState()
+  const [facts, setFacts] = useState()
   const swiper = useSwiper();
 
   useEffect(() => {
@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-r from-[#087685] to-[#4CAA7F] w-full h-screen">
       <div className="flex items-center justify-center h-screen">
-        <div className="mx-auto w-[26rem] h-screen">
+        <div className="mx-auto md:w-[26rem] w-[17rem] h-screen">
           <Swiper
             direction={'vertical'}
             className="h-screen"
@@ -97,7 +97,7 @@ export default function Home() {
               <SwiperSlide
                 key={fact.id}
                 spaceBetween={30}
-                className="h-[600px] !flex !items-center"
+                className="md:h-[600px] h-[400px] !flex !items-center"
                 slidersPerView={2}
               >
                 <Swiper
@@ -105,12 +105,12 @@ export default function Home() {
                   grabCursor={true}
                   modules={[EffectFlip]}
                   loop={true}
-                  className="h-[600px] w-96 my-auto !flex !items-center"
+                  className="md:h-[600px] h-[400px] w-96 my-auto !flex !items-center"
                 >
-                  <SwiperSlide className="w-96 h-[600px]">
+                  <SwiperSlide className="md:w-96 w-[17rem] md:h-[600px] h-[400px]">
                     <CardFront fact={fact} setResponseClicked={setResponseClicked} />
                   </SwiperSlide>
-                  <SwiperSlide className="w-96 h-[600px]">
+                  <SwiperSlide className="md:w-96 w-[17rem] md:h-[600px] h-[400px]">
                     <CardBack fact={fact} indexQuestion={indexQuestion} setIndexQuestion={setIndexQuestion} setResponseClicked={setResponseClicked} />
                   </SwiperSlide>
                 </Swiper>
