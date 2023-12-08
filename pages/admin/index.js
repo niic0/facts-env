@@ -80,12 +80,12 @@ export default function Page() {
             </div>
 
             <div className={`bg-white p-3 rounded-lg shadow-lg mt-10`}>
-                <div href="/admin/creer-fact" className="flex items-center space-x-2 justify-center w-fit text-md hover:bg-blue-400 transition font-bold px-3 py-2 rounded-xl bg-blue-500 text-white">
+                <Link href="/admin/creer-fact" className="flex items-center space-x-2 justify-center w-fit text-md hover:bg-blue-400 transition font-bold px-3 py-2 rounded-xl bg-blue-500 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
                     </svg>
-                    <Link>Ajouter un Fact</Link>
-                </div>
+                    <div>Ajouter un Fact</div>
+                </Link>
 
                 <div className="overflow-auto h-[600px]">
                     <table className="table-auto w-full border-separate border-spacing-y-6">
