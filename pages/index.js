@@ -96,10 +96,10 @@ export default function Home() {
   return (
     <main className="bg-gradient-to-r from-[#087685] to-[#4CAA7F] w-full h-screen">
       <div className="flex relative items-center justify-center h-screen">
-        <div className="absolute top-10 right-0 -rotate-10 left-0">
+        <div className="absolute top-10 right-0 -rotate-10 left-0 md:block hidden">
           <Image className="mx-auto" width="270" alt="" src={Swipefinale} />
         </div>
-        <div className={`${tutoVisible ? "opacity-1" : "opacity-0"} transition-all sm:absolute w-screen h-screen top-0 bottom-0 right-0 left-0`}>
+        <div className={`${tutoVisible ? "opacity-1" : "opacity-0"} transition-all md:block hidden sm:absolute w-screen h-screen top-0 bottom-0 right-0 left-0`}>
           <div className="flex h-screen items-center justify-center space-x-[30rem]">
             <div className="">
               <Image alt="" src={falseSvg} />
